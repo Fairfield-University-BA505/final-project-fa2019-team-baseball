@@ -1,14 +1,13 @@
-# BA 505 Final Projects
+# BA 505 Final Project - Team Baseball
 ## Fall 2019
-__This is the final project document.__
+__This is our final project document.__
 
 ## Overview
-Students work in 4-person teams to define and complete a moderately-sized analytical project in Python. Detailed instructions are provided regarding selecting and framing a suitable analysis. Grading criteria will reflect demonstrated achievement of the objectives and compliance with the requirements.
+As a group we constructed different types of analysis from the 2017 data sheet to find some sort of conclusion. We used several types of graphs to visually display our data to help us make an educated decision about our statistics. We split our original data set into two subsets so we would be able to compare Houston Astros batting stats to the batting performance of the league in order to give a more accurate representation of our findings.
 
 ## Objectives
-* Apply Python skills to a student-selected analytical project of moderate (but nontrivial) scope and complexity.
-* Demonstrate mastery of Python, Pandas, Matplolib, Jupyter, and GitHub.
-* Work in teams, with professional-quality tools and standards.
+Use data from 2017 for all pitches thrown and hit in Minute Maid Park to see a connection between sign stealing scandal and performance. We want to provide sufficient evidence that the Houston Astros have a higher success rate at bat because they are aware of the pitch that is being thrown. One of the main goals for this project was to show that as a group we have mastered the following skills, Python, Pandas, Matplotlib, Jupyter, and GitHub, and create a fully functioning project using all of these tools. 
+
 
 ## Project Requirements
 * **All work must be your own.** It is your responsibility to demonstrate the unique contributions made by your work. You are also expected to thoroughly understand and be able to explain any work done by your teammates.
@@ -20,7 +19,7 @@ Students work in 4-person teams to define and complete a moderately-sized analyt
 * **All data used must be posted in your GitHub repository.** If you are borrowing data from Kaggle, then please cite the original source in your `Readme.md` file. It should be possible for anyone to reproduce your work, including collecting the data from original sources.
 * **Document your work.** At a minimum, each analytical step (code cell) should be documented with markdown cells above and below stating your intention (_above_) and interpretation (_below_). Your notebooks should tell a story about the data. **One should be able to read the rendered notebook in GitHub (without running your code or your presentation) and know exactly what you did, why you did it, and why we should care about the results.**
 
-## Instructions  
+## Process  
 
 1. **Watch and learn.** Study the following tutorial, which sets the bar for what constitutes A-level work in this course:  
 [Reproducible Data Analysis in Jupyter](https://jakevdp.github.io/blog/2017/03/03/reproducible-data-analysis-in-jupyter)  
@@ -32,19 +31,14 @@ The tutorial is in 10 parts, with some of the more advanced work in the second h
   * [pmarcelino/comprehensive-data-exploration-with-python](https://www.kaggle.com/pmarcelino/comprehensive-data-exploration-with-python)
   * [This](https://github.com/fairfield-university-ba505-fall2018/final-project-filip-s-angels) is an example of last year's student project in this course. You should use that as the reference for an excellent project. __NOTE__ that two of the three students in this group got hired because of this project.
 
-   While some are more "finished" than others, you'll find that each tells a story with data. Try to learn to do that.  
+      While some are more "finished" than others, you'll find that each tells a story with data. Try to learn to do that.  
 
-3. **Find a suitable data source.** It must meet the requirements above. Collecting your own data (from an API, crawling/scraping, etc.) is encouraged though not required. If you are using a dataset discovered through Kaggle, then be sure to cite it and state how the analysis you are doing is different. Whatever you do, don't just replicate someone else's analysis. That will result in an immediate F for the course and (very likely) expulsion from the program. 
-4. **Develop a few research questions that you'd like to answer based on the data.** The questions should be stated in the preamble to your notebook. The analysis should also demonstrate your abilities. Read the requirements again to makes sure your analysis will comply.
-5. **Do some analysis**. This is likely to be a learn-as-you-go process. Suggestion: each team member should keep a scratch notebook file for trying things out. Then transfer your work to the finished notebook just before completion. However, delete your scratch notebooks just before your final commit and push to GitHub. 
+3. **Find a suitable data source.** We found and collected the data used in this project at baseballsavant.com. They provide in depth statistics for all plays that occur in MLB games. We filtered the data by pitches thrown at Minute-Made Park in 2017 and then downloaded it into a csv to be uploaded into JupyterLab. 
+    Additionally, we did some outside research to help us improve on our visual analysis
+4. **Develop a few research questions that you'd like to answer based on the data.** After carefully collecting and cleaning the data, we developed research questions that could help us attempt to prove our main point: that the Houston Astros gained a significant advantage over opponents by stealing signs throughout the 2017 season. We based our research questions off of key attributes such as pitch_name, launch_speed, and launch_angle to see how Astros’ players fared against some of the other top players in the league.
+5. **Do some analysis**. We were able to answer 3 of our research questions through the use of visualizations in Pandas. We visualized some of the key attributes and how they differed between Astros players and the rest of the league. We looked for any outstanding differences between these visualizations and were able to find that there was some clear statistical evidence that they had an edge over their opponents, but our findings are not sufficient enough to definitively prove that they had an advantage over their opponents because of sign stealing.
+
+    To make improvements on our analysis going forward, we can collect more data from previous and future years, and compare all ballparks in the MLB rather than just Minute-Made Park. We did find some of the answers to our questions but collected more data will allow us to further justify our current answers and look for stronger proof of the Astros’ advantage they gained because of sign stealing.  
 6. **Try something more advanced.** Once you have a basic framework for your analysis, extend it with something more advanced. Perhaps you could try an advanced plot or maybe another data source or maybe replicated sampling to demonstrate reproducibility/lack of bias.
 7. **Write and commit a `Readme.md` file inside your repository outlining your project.** This file is what GitHub will display by default for your repository, so make a good impression. It's standard Markdown, just like we use in Jupyter. Instead of using slides, you will start and end your final presentation with the `Readme.md`, so use it to link to all your files and provide (meta) information about your project: motivations, data sources, challenges, lessons learned, etc. Suggestion: write this stuff early and update it as you go along.
 8. **Clean up your final notebook and GitHub repo.** The final notebook is your presentation (i.e., there will be no slides) so make sure it is readable on a TV monitor from across the room. It is also your report, so make sure every objective, decision, interpretation, and conclusion you make is throughly explained and professional-looking. (Yes, styling and organization matters. We're professionals, right?) Make sure you don't have any unfinished or extraneous artifacts left over from your explorations. (Again, we're professionals, not undergrads.)
-
-## Timeline/Workplan
-* **Oct., 29:** Review assignment, form teams, and begin planning out the work. Do not create any shared GitHub repositories yet. 
-* **Nov, 5:** Follow instructions in class to set up your teams and shared repositories in GitHub classroom. Also prepare a short (5-minute verbal) __proposal__ for your project that covers i) data source; ii) research questions; iii) anticipated challenges; and iv) what results you expect to present on the final day of class.
-* **Nov., 19 and 26:** Use the class time to meet with your team and ask questions when needed. (Note: You are expected to show up for class. We have other classwork to do yet.)
-* **Dec., 3:** Preview of your results. This is like a dress rehearsal to address any remaining problems before your final presentations. 
-* **Dec., 10:** Present your finished work. Walk us through your project, including your source/motivations, finished notebook, modules/testing, and lessons learned. There will be no slides for this. Just use your work. See the instructions for the `Readme.md` file above. 
-
