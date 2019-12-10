@@ -37,12 +37,12 @@ The tutorial is in 10 parts, with some of the more advanced work in the second h
 
 3. **Find a suitable data source.** We found and collected the data used in this project at baseballsavant.com. They provide in depth statistics for all plays that occur in MLB games. We filtered the data by pitches thrown at Minute-Made Park in 2017 and then downloaded it into a csv to be uploaded into JupyterLab. 
     Additionally, we did some outside research to help us improve on our visual analysis. They are listed here:
-    (DrawingFromData)[https://www.drawingfromdata.com/how-to-rotate-axis-labels-in-seaborn-and-matplotlib]
-    (CMD)[https://cmdlinetips.com/2018/02/how-to-subset-pandas-dataframe-based-on-values-of-a-column/]
-    (Seaborn)[https://seaborn.pydata.org/tutorial/categorical.html]
-    (Pandas-Seaborn)[https://chrisalbon.com/python/data_wrangling/pandas_with_seaborn/]
-    (Pandas)[https://pandas.pydata.org/pandas-docs/stable/reference/frame.html#plotting]
-    (TowardsDataScience)[https://towardsdatascience.com/a-guide-to-pandas-and-matplotlib-for-data-exploration-56fad95f951c]
+    [DrawingFromData](https://www.drawingfromdata.com/how-to-rotate-axis-labels-in-seaborn-and-matplotlib)
+    [CMD](https://cmdlinetips.com/2018/02/how-to-subset-pandas-dataframe-based-on-values-of-a-column/)
+    [Seaborn](https://seaborn.pydata.org/tutorial/categorical.html)
+    [Pandas-Seaborn](https://chrisalbon.com/python/data_wrangling/pandas_with_seaborn/)
+    [Pandas](https://pandas.pydata.org/pandas-docs/stable/reference/frame.html#plotting)
+    [TowardsDataScience](https://towardsdatascience.com/a-guide-to-pandas-and-matplotlib-for-data-exploration-56fad95f951c)
 
 4. **Develop a few research questions that you'd like to answer based on the data.** After carefully collecting and cleaning the data, we developed research questions that could help us attempt to prove our main point: that the Houston Astros gained a significant advantage over opponents by stealing signs throughout the 2017 season. We based our research questions off of key attributes such as pitch_name, launch_speed, and launch_angle to see how Astros’ players fared against some of the other top players in the league.
 5. **Do some analysis**. We were able to answer 3 of our research questions through the use of visualizations in Pandas. We visualized some of the key attributes and how they differed between Astros players and the rest of the league. We looked for any outstanding differences between these visualizations and were able to find that there was some clear statistical evidence that they had an edge over their opponents, but our findings are not sufficient enough to definitively prove that they had an advantage over their opponents because of sign stealing.
